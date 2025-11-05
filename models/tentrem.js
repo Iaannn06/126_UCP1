@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true
     },
     Tipe_Kamar: {
-        type: DataTypes.VARCHAR(50),
+        type: DataTypes.STRING,
         allowNull: false
     },
     Kapasitas_Tamu: {
@@ -18,18 +18,18 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false
     },
     Fasilitas: {
-        type: DataTypes.VARCHAR(255),
+        type: DataTypes.STRING,
         allowNull: false
     },
-    Tanggal_pesan: {
-       tipe :DataTypes.timestamps, default:current_timestamp(),
+    Tanggal_Pesan: {
+       type :DataTypes.DATE,
        allowNull: false 
     }
   }, {
-    tableName: 'hotels',
+    tableName: 'hotel',
     timestamps: true,
     freezeTableName: true       
     
     });
-    return Komik;
+    return hotel;
 };
