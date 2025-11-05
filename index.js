@@ -23,7 +23,7 @@ db.sequelize.sync()
 app.post('/hotel', async (req, res) => {
   try {
     const data = req.body;
-    const komik = await db.Tentrem.create(data);
+    const hotel = await db.Tentrem.create(data);
     res.status(201).json({ message: 'Hotel created successfully', Tentrem });
   } catch (error) {
     res.status(500).json({ message: error.message });
