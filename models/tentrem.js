@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  const hotel = sequelize.define('hotel', {
+  const Tentrem = sequelize.define('hotel', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -31,5 +31,5 @@ module.exports = (sequelize, DataTypes) => {
     freezeTableName: true       
     
     });
-    return hotel;
+    return Tentrem;
 };
